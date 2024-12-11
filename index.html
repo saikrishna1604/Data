@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhimavarapu Venkata Saikrishna</title>
+    <title>Bhimavarapu Venkata Sai Krishna</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,18 +33,20 @@
     </style>
 </head>
 <body>
-    <h1>My Portfolio</h1>
+    <h1>Bhimavarapu Venkata Sai Krishna</h1>
     <p>Click on a project to open its document!</p>
-    <div class="button-container">
-        <button onclick="openDocument('project1.pdf')">Project Part-1</button>
-        <button onclick="openDocument('project2.pdf')">Project Part-2</button>
-        <button onclick="openDocument('project3.pdf')">Project Part-3</button>
-    </div>
+     <body>
+
+    <button onclick="onClickFunction('https://vinuthna-erukulla.github.io/Class-participation-10-weeks/')">Project 1</button>
+    <button onclick="onClickFunction('https://vinuthna-erukulla.github.io/Data-analyst-vinuthna/')">Project 2</button>
+    <button onclick="onClickFunction('https://www.example3.com')">Project 3</button>
+
+</body>
 
     <script>
-        function openDocument(docPath) {
-            // Open the document in a new tab
-            window.open(docPath, '_blank');
+        function openDocument(url) {
+            // Navigate to the specified URL
+            window.location.href = url;
         }
     </script>
 </body>
