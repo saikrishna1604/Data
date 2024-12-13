@@ -5,37 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhimavarapu Venkata Sai Krishna - Portfolio</title>
     <style>
+        /* General Body Styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #f1f1f1; /* Light grey background */
+            color: #333; /* Dark text for readability */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             text-align: center;
-            margin-top: 50px;
-            padding: 0 10%;
         }
 
+        /* Header Styles */
         h1 {
-            color: #2C3E50;
+            color: #2C3E50; /* Dark grey/black color */
             font-size: 2.5em;
+            margin-top: 20px;
         }
 
+        /* Paragraph Styles */
         p {
             font-size: 1.2em;
-            color: #555;
+            color: #7f8c8d; /* Light grey text */
+            margin-top: 10px;
         }
 
+        /* Profile Container Styling */
         .profile-container {
             margin-top: 30px;
         }
 
-        ..profile-img {
-    width: 100px; /* Increased width */
-    height: 100px; /* Increased height */
-    border-radius: 80%; /* Keeps the circular shape */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    border: 5px solid #007BFF; /* Slightly thicker border */
-}
+        /* Profile Image Styles */
+        .profile-img {
+            width: 150px; /* Adjust size */
+            height: 150px; /* Adjust size */
+            border-radius: 50%; /* Circular shape */
+            object-fit: contain; /* Ensures the entire image fits without cropping */
+            border: 4px solid #bdc3c7; /* Silver border */
+        }
 
+        /* Button Container Styles */
         .button-container {
             margin-top: 40px;
             display: flex;
@@ -43,30 +56,37 @@
             gap: 20px;
         }
 
+        /* Button Styles */
         button {
-            padding: 15px 30px;
-            font-size: 18px;
-            background-color: #007BFF;
+            padding: 20px 40px; /* Increased padding for more height */
+            font-size: 20px; /* Larger text for better readability */
+            background-color: #2c3e50; /* Dark grey button */
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px; /* Round corners for a smoother look */
             cursor: pointer;
-            transition: background-color 0.3s ease;
-            width: 200px;
+            transition: all 0.3s ease; /* Smooth transition for both color and shadow */
+            width: 250px; /* Wider buttons */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
         }
 
+        /* Button Hover Effect */
         button:hover {
-            background-color: #0056b3;
+            background-color: #34495e; /* Darker grey on hover */
+            transform: translateY(-4px); /* Slight lift effect on hover */
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
         }
 
+        /* Button Focus Effect */
         button:focus {
             outline: none;
         }
 
+        /* Footer Styles */
         footer {
             margin-top: 50px;
             font-size: 0.9em;
-            color: #777;
+            color: #7f8c8d; /* Light grey footer text */
         }
 
     </style>
@@ -76,7 +96,7 @@
     <!-- Profile Section -->
     <h1>Bhimavarapu Venkata Sai Krishna</h1>
     <div class="profile-container">
-        <!-- Add your photo -->
+        <!-- Add your photo here -->
         <img src="sk.jpeg" alt="Bhimavarapu Venkata Sai Krishna" class="profile-img">
     </div>
     <p>Click on a project to explore the details!</p>
